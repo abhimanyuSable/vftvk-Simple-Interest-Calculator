@@ -30,6 +30,14 @@ function ValidateInput(){
         console.log("The number is negative");
         alert("Enter a positive value for principal");
         document.getElementById("principal").focus();
+        return false;
+    }
+
+    else {
+        console.log("No number entered");
+        alert("No number entered for principal input");
+        document.getElementById("principal").focus();
+        return false;
     }
 
 }
